@@ -14,7 +14,7 @@
         <div class="header__score score">
           <div class="score__inner">
             <strong class="score__title">Score</strong>
-            <span class="score__text">0</span>
+            <span class="score__text" id="score">0</span>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
           <h3 class="part__title">You picked</h3>
           <img id="humanHand" class="part__img" src="img/paper.svg" alt="" />
         </div>
-        <div class="game-zone-picker__status status">
+        <div class="game-zone-picker__status status" id="status">
           <h2 class="status__title">You Win</h2>
           <button class="status__refresh" id="refreshGame">Play Again</button>
         </div>
@@ -52,6 +52,27 @@
         </div>
       </div>
     </section>
+
+
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">RULES</button>
+
+      <div class="modal hidden" id="modal">
+        <div class="modal-header">
+          <h3>RULES</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <h2>RULES</h2>
+          <img src="./img/rules.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="overlay"></div>
     <script src="./js/app.js" type="module"></script>
   </body>
 </html>
